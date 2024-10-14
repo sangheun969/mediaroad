@@ -13,7 +13,7 @@ const ComIntro: React.FC = () => {
           <Image src={media2} alt="photo2" className="w-[600px] h-[600px]" />
         </div>
       </div>
-    </div>
+    </div> 
   );
 };
 

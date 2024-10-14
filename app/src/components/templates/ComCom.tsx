@@ -4,7 +4,7 @@ const ComCom: React.FC = () => {
   return (
     <div className="w-full h-[100vh] flex flex-row justify-between">
       <div className="">
-        <p>
+      <p>
           미디어로드 사업 분야 미디어로드는 AI, 블록체인, 빅데이터, 플랫폼 기반
         </p>
         <p>
