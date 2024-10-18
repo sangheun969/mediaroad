@@ -15,7 +15,7 @@ const ComVideo: React.FC = () => {
   };
   return (
     <div
-      className="relative w-full h-full flex justify-center items-center"
+      className="relative w-full h-[400vh] flex justify-center items-center pt-10"
       onWheel={handleWheel}
     >
       <video

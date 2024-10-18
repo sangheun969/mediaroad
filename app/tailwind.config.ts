@@ -15,6 +15,7 @@ const config: Config = {
       },
       fontFamily: {
         jua: ["Jua", "sans-serif"],
+        noto: ["NotoSansKR", "sans-serif"],
       },
     },
   },

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import {
   potatoImg,
@@ -17,22 +17,19 @@ interface VideoIntro1Props {
   translateY: number;
 }
 
-const VideoIntro1: React.FC<VideoIntro1Props> = ({ translateY }) => {
+const VideoIntro1: React.FC<VideoIntro1Props> = () => {
   return (
     <div className="flex flex-col items-center my-9 w-full h-full">
       <div className="flex flex-row justify-between gap-[70px]">
-        <div
-          className="flex flex-col pl-6 w-[70%] h-full my-[150px] sticky top-[120px]"
-          style={{ transform: `translateY(${translateY}%)` }}
-        >
-          <h1 className="text-white font-bold text-[50px] h-[90px]">About</h1>
-          <p className="text-white text-[30px] font-bold">
+        <div className="flex flex-col pl-10 w-[70%] h-full sticky my-[100px] top-[150px] font-noto">
+          <h1 className="text-white text-[50px] h-[90px]">About</h1>
+          <p className="text-white text-[30px]">
             AI, 블록체인, 빅데이터, 플랫폼 기반 산업 체계의 변화, 이미지와 영상
             기반 디지털 콘텐츠 생산과 소비 시대를 맞아 이용자와 소비자 중심의
             다양한 디지털 IT 서비스를 제공
           </p>
         </div>
-        <div className="flex flex-col justify-center items-center font-jua text-white font-bold text-[22px] w-full h-full gap-[120px]">
+        <div className="flex flex-col justify-between font-jua text-white font-bold text-[22px] w-full h-full gap-44">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -118,7 +115,7 @@ const VideoIntro1: React.FC<VideoIntro1Props> = ({ translateY }) => {
           </motion.div>
         </div>
       </div>
-      <div className="my-10">
+      <div className="my-36">
         <p className="text-white flex flex-row justify-center font-bold">
           Scroll to Discover
         </p>
@@ -133,9 +130,11 @@ const VideoIntro1: React.FC<VideoIntro1Props> = ({ translateY }) => {
           y: { duration: 1 },
         }}
       >
-        <video className="w-[1200px] my-8" controls>
-          <source src="/videos/media2.mp4" type="video/mp4" />
-        </video>
+        <div className="h-[100vh]">
+          <video className="w-[1200px] my-8" controls>
+            <source src="/videos/media2.mp4" type="video/mp4" />
+          </video>
+        </div>
       </motion.div>
     </div>
   );

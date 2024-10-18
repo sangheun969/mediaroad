@@ -51,7 +51,7 @@ const Nav: React.FC = () => {
     <div
       className={`header flex w-full justify-between py-[15px] fixed text-white px-10 transition duration-300 delay-150 ${
         scrolled ? "bg-white " : ""
-      }`}
+      } z-50`}
     >
       <div className="logo w-[200px]  ">
         <Image src={mediaLogo2} alt="" />
@@ -76,9 +76,6 @@ const Nav: React.FC = () => {
           </li>
         </ul>
       </nav>
-      <div className="mt-5">
-        <Button variant="sendBtn1" size="md" label="Eng" />
-      </div>
     </div>
   );
 };

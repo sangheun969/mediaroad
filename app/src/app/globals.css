@@ -7,3 +7,10 @@
   font-weight: 400;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "NotoSansKR";
+  src: url("/fonts/NotoSansKR-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
