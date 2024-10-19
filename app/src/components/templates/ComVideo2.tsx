@@ -1,5 +1,5 @@
 import React from "react";
-import MediaVideo from "../organisms/mediaVideo";
+import MediaVideo from "../organisms/MediaVideo";
 
 const ComVideo2: React.FC = () => {
   return (
