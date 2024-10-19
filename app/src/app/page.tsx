@@ -4,6 +4,7 @@ import ComIntro from "../components/templates/ComIntro";
 import ComCom from "../components/templates/ComCom";
 import ComService from "../components/templates/ComService";
 import ComVideo from "../components/templates/ComVideo";
+import ComVideo2 from "@/components/templates/ComVideo2";
 
 export default function Home() {
   return (
@@ -11,8 +12,8 @@ export default function Home() {
       <Header />
       <Main />
       <ComVideo />
+      <ComVideo2 />
       <ComIntro />
-      <ComCom />
       <ComService />
     </main>
   );

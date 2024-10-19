@@ -19,7 +19,7 @@ interface VideoIntro1Props {
 
 const VideoIntro1: React.FC<VideoIntro1Props> = () => {
   return (
-    <div className="flex flex-col items-center my-9 w-full h-full">
+    <div className="flex items-center mt-9 w-full h-full">
       <div className="flex flex-row justify-between gap-[70px]">
         <div className="flex flex-col pl-10 w-[70%] h-full sticky my-[100px] top-[150px] font-noto">
           <h1 className="text-white text-[50px] h-[90px]">About</h1>
@@ -29,7 +29,7 @@ const VideoIntro1: React.FC<VideoIntro1Props> = () => {
             다양한 디지털 IT 서비스를 제공
           </p>
         </div>
-        <div className="flex flex-col justify-between font-jua text-white font-bold text-[22px] w-full h-full gap-44">
+        <div className="flex flex-col justify-between items-center font-jua text-white font-bold text-[22px] w-full h-full gap-44">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -115,27 +115,6 @@ const VideoIntro1: React.FC<VideoIntro1Props> = () => {
           </motion.div>
         </div>
       </div>
-      <div className="my-36">
-        <p className="text-white flex flex-row justify-center font-bold">
-          Scroll to Discover
-        </p>
-      </div>
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: false }}
-        transition={{
-          ease: "easeInOut",
-          duration: 2,
-          y: { duration: 1 },
-        }}
-      >
-        <div className="h-[100vh]">
-          <video className="w-[1200px] my-8" controls>
-            <source src="/videos/media2.mp4" type="video/mp4" />
-          </video>
-        </div>
-      </motion.div>
     </div>
   );
 };
