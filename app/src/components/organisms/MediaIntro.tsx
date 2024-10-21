@@ -32,7 +32,7 @@ const MediaIntro: React.FC = () => {
           y: { duration: 1.5 },
         }}
       >
-        <p className="h-[100vh] items-center">
+        <p className="h-[100vh] flex items-center">
           저희 미디어 로드는 열린 마음으로 인문학에서부터 자연과학에 이르기까지
           다양한 지식의 영역들을 수용하고 새로운 창의성을 구현하는 정신을
           기본으로 합니다.

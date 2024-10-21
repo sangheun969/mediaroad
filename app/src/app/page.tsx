@@ -1,7 +1,6 @@
 import Main from "../components/Main";
 import Header from "../components/templates/Header";
 import ComIntro from "../components/templates/ComIntro";
-import ComCom from "../components/templates/ComCom";
 import ComService from "../components/templates/ComService";
 import ComVideo from "../components/templates/ComVideo";
 import ComVideo2 from "@/components/templates/ComVideo2";
