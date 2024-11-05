@@ -2,6 +2,10 @@
 
 import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import SlideData from "../molecules/SlideData";
+import SlideData2 from "../molecules/SlideData2";
+import SlideData3 from "../molecules/SlideData3";
+import SlideData4 from "../molecules/SlideData4";
 
 const ServiceSlide: React.FC = () => {
   const [visible, setVisible] = useState(0);
@@ -26,7 +30,14 @@ const ServiceSlide: React.FC = () => {
       transition: { duration: 0.5 },
     }),
   };
-  return <div></div>;
+  return (
+    <div>
+      <SlideData />
+      <SlideData2 />
+      <SlideData3 />
+      <SlideData4 />
+    </div>
+  );
 };
 
 export default ServiceSlide;
