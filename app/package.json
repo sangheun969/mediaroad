@@ -2,11 +2,14 @@
   "name": "app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://sangheun969.github.io/mediaroad/",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.0",
