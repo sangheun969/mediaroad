@@ -6,6 +6,9 @@ const nextConfig = {
   assetPrefix: isProd ? "/mediaroad" : "",
   basePath: isProd ? "/mediaroad" : "",
   trailingSlash: true,
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;
