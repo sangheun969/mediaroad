@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  assetPrefix: "/mediaroad",
-  basePath: "/mediaroad",
+  assetPrefix: isProd ? "/mediaroad" : "",
+  basePath: isProd ? "/mediaroad" : "",
   trailingSlash: true,
 };
 
