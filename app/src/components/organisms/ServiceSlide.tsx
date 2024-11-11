@@ -31,7 +31,7 @@ const ServiceSlide: React.FC = () => {
     }),
   };
   return (
-    <div>
+    <div className="flex flex-row gap-5">
       <SlideData />
       <SlideData2 />
       <SlideData3 />

@@ -4,14 +4,14 @@ import TextBodys from "../atoms/TextBodys";
 
 const SlideData2: React.FC = () => {
   return (
-    <div>
+    <div className="border flex flex-col w-[300px] h-[400px]">
       <TextHeaders>
-        미디어 융합 환경에서 문화다양성의 의미 변화와 전망
+        시청각장애인 등 방송소외계층의 미디어 접근성 제고방안 연구
       </TextHeaders>
       <TextBodys>미디어 전략 연구소</TextBodys>
-      <TextBodys>정보통신정책연구원</TextBodys>
+      <TextBodys>방송통신위원회</TextBodys>
       <div>
-        <TextBodys>2010-04~2010-10</TextBodys>
+        <TextBodys>2010-04~2010-11</TextBodys>
       </div>
     </div>
   );
