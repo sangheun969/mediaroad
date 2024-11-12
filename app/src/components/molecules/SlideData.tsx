@@ -4,7 +4,7 @@ import TextBodys from "../atoms/TextBodys";
 
 const SlideData: React.FC = () => {
   return (
-    <div className="border flex flex-col w-[300px] h-[400px]">
+    <div className="border flex flex-col w-[300px] h-[400px] p-3 gap-3 rounded-md">
       <TextHeaders>
         미디어 융합 환경에서 문화다양성의 의미 변화와 전망
       </TextHeaders>

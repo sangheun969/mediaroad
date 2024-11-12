@@ -4,7 +4,7 @@ import TextBodys from "../atoms/TextBodys";
 
 const SlideData3: React.FC = () => {
   return (
-    <div className="border flex flex-col w-[300px] h-[400px]">
+    <div className="border flex flex-col w-[300px] h-[400px] p-3 gap-3 rounded-md">
       <TextHeaders>
         방송통신융합 환경에서 방송소외계층 범주 및 권익 개선방안 연구
       </TextHeaders>
