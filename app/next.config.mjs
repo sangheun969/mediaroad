@@ -4,7 +4,6 @@ const isProd = process.env.NODE_ENV === "production";
 const nextConfig = {
   output: "export",
   basePath: isProd ? "/mediaroad" : "",
-  assetPrefix: isProd ? "/mediaroad" : "",
   trailingSlash: true,
   images: {
     unoptimized: true,

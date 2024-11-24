@@ -14,3 +14,7 @@
   font-weight: 600;
   font-style: normal;
 }
+
+#__next {
+  margin: 0;
+}
